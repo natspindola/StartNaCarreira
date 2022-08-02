@@ -4,13 +4,14 @@ function calculateTip(event) {
     let serviceQuality = document.getElementById('serviceQuality').value;
     let numOfPeople = document.getElementById('people').value;
 
-    if(bill == "" | serviceQuality == 0) {
-        alert("Por favor, preencha os campos.")
+    if(bill == "" | bill == 0) {
+        alert("Por favor, preencha o valor da conta.")
         return;
     }
 
     if(numOfPeople == "" | numOfPeople <= 1) {
-        numOfPeople = 1;
+        alert("Por favor, preencha a quantidade de pessoas.")
+        return;
     }
     
     let total = (bill * serviceQuality);
@@ -24,6 +25,7 @@ function calculateTip(event) {
     document.getElementById('divididoTip').style.display = "block";
 }
 
-document.getElementById('totalTip').style.display = "none"
+document.getElementById('totalTip').style.display = "none";
+document.getElementById('divididoTip').style.display = "none";
 
 document.getElementById('tipsForm').addEventListener('submit', calculateTip);
