@@ -7,6 +7,42 @@
     <title>Calculadora de Gorjetas</title>
 </head>
 <body>
+    <div>
+        <h1>Calculadora de Gorjetas</h1>
+    </div>
 
+    <div>
+        <form>
+            <label for="bill">
+                <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="number" placeholder="Digite o valor" name="bill" id="bill">
+            </p>
+
+            <label for="serviceQuality">
+                <p>Como foi o seu atendimento?</p>
+            </label>
+            <p>
+                <select name="serviceQuality" id="serviceQuality">
+                    <option disabled selected value="0">-- Escolha uma opção</option>
+                    <option value="0,3">30% - Incrível</option>
+                    <option value="0,2">20% - Bom</option>
+                    <option value="0,15">15% - Aceitável</option>
+                    <option value="0,10">10% - Ruim</option>
+                    <option value="0">0% - Péssimo</option>
+                </select>
+            </p>
+
+            <label for="people">
+                <p>Quantas pessoas vão dividir a conta?</p>
+                <p>
+                    <input type="number" placeholder="1" name="people" id="people"> pessoa(s)
+                </p>
+            </label>
+            
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
 </body>
 </html>
