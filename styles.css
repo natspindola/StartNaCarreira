@@ -75,3 +75,15 @@ body {
 label {
     font-weight: bold;
 }
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#divididoTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}

@@ -16,7 +16,7 @@
         </div>
 
         <div>
-            <form class="tipsForm">
+            <form class="tipsForm" id="tipsForm">
                 <label for="bill">
                     <p>Quanto ficou a conta?</p>
                 </label>
@@ -45,10 +45,21 @@
                     </select>
                 </p>
 
-                <button type="submit" class="formSubmit">Calcular</button>
+                <button type="submit" class="formSubmit" id="formSubmit">Calcular</button>
             </form>
         </div>
+        <div id="totalTip">
+            Gorjeta total:
+            R$ <span id="tip">0.00</span>
+        </div>
+
+        <div id="divididoTip">
+            Gorjeta dividida:
+            R$ <span id="tip">0.00</span>
+        </div>
     </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>
