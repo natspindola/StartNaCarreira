@@ -9,7 +9,7 @@ function calculateTip(event) {
         return;
     }
 
-    if(numOfPeople == "" | numOfPeople <= 1) {
+    if(numOfPeople == "" | numOfPeople <= 0) {
         alert("Por favor, preencha a quantidade de pessoas.")
         return;
     }
